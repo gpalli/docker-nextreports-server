@@ -1,7 +1,8 @@
-# docker-nextreports-server-tomcat
-Running latest nextreports-server inside docker with latest Tomcat
+# docker-nextreports-server
 
-Start the server running:
+Running latest nextreports-server inside Tomcat server with Docker image.
+
+Start the server executing:
 
 ```
 docker run --rm -it -p 8080:8080 gpalli/nextreports-server
