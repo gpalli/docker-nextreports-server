@@ -7,7 +7,7 @@ RUN cd /usr/local/tomcat/webapps \
     && curl -SL http://www.asf.ro/next_reports_releases/server/nextreports-server.war > nextreports-server.war
 
 ADD reports.xml /usr/local/tomcat/conf/Catalina/localhost/reports.xml
-ADD index.html /usr/local/tomcat/webapps/index.html
+ADD index.html /usr/local/tomcat/webapps/ROOT/index.jsp
 
 RUN sed -i 's|common.loader=|common.loader="${catalina.base}/reports",|g' \
             /usr/local/tomcat/conf/catalina.properties
